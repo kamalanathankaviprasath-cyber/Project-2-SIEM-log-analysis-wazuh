@@ -29,20 +29,20 @@ Pattern consistent with brute force attack
 (multiple attempts in short timeframe).
 
 ### Step 2 — Source Analysis
-Source IP 192.168.1.100 is Ubuntu Desktop VM
+Source IP 192.168.1.100 is an Ubuntu Desktop VM
 on internal LabNet. In a real environment
-this would indicate insider threat or
+this would indicate an insider threat or
 compromised internal machine.
 
 ### Step 3 — MITRE ATT&CK Mapping
-Tactic: Credential Access
-Technique: T1110 — Brute Force
-Sub-tech: T1110.001 — Password Guessing
-Also seen: T1021.004 — SSH (Lateral Movement)
+1. Tactic: Credential Access
+2. Technique: T1110 — Brute Force
+3. Sub-tech: T1110.001 — Password Guessing
+4. Also seen: T1021.004 — SSH (Lateral Movement)
 
 ### Step 4 — Verdict
 CONFIRMED ATTACK — SSH brute force simulation
-successfully detected by Wazuh SIEM.
+Successfully detected by Wazuh SIEM.
 
 ### Step 5 — Recommended Response
 1. Block source IP at firewall level
